@@ -34,7 +34,7 @@ const AdminDashboard = () => {
     const handleGetData = async () => {
         showSpinner(true);
         try {
-            const response = await fetch(`${apiUrl}/admin/data`);
+            const response = await fetch(`http://localhost:5000/admin/data`);
             if (!response.ok) {
                 throw new Error("Network response was not ok");
             }
